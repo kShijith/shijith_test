@@ -38,7 +38,7 @@ jobs:
         configuration: [debug, release]
     steps:
     - run: echo "This job builds the cofiguration ${{ matrix.configuration }}."
-on:
+    on:
   workflow_dispatch:
   push:
     branches:
